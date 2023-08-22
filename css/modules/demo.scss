@@ -1,0 +1,34 @@
+.demo {
+  background-color: $lightGray;
+  padding-bottom: 7rem;
+  text-align: center;
+  transition: ease-in-out;
+
+  &_para {
+    font-size: 16px;
+    padding: 5rem 5rem 2.5rem 5rem;
+    font-family: "Europa", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $paraGray;
+    line-height: 1.5em;
+    margin-top: 0;
+
+    @include atSmaller {
+      padding-top: 2rem;
+      font-size: 18px;
+    }
+
+    @include atSmall {
+      padding: 1rem 20rem 1rem 20rem;
+    }
+
+    @include atMedium {
+      padding: 1rem 28rem 4rem 28rem;
+    }
+
+    @include atLarge {
+      padding: 1rem 40rem 2rem 40rem;
+    }
+  }
+}

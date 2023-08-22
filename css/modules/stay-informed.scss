@@ -1,0 +1,76 @@
+.stay-informed {
+  background-image: url("../img/Maskforstayinformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $lightGray;
+  text-align: center;
+  padding: 4rem 0;
+
+  &-header {
+    font-size: 45px;
+  }
+
+  &-para {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  &_input {
+    & input {
+      border: none;
+      height: 45px;
+      margin: 0 1rem;
+      border-radius: 4px;
+      width: 27rem;
+
+      @include atSmall {
+        width: 30rem;
+      }
+    }
+
+    & p {
+      margin: 0;
+    }
+
+    @include atSmall {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+      line-height: 0;
+
+      & input {
+        & label {
+          & span input {
+            margin-left: 1rem;
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &_btn {
+    padding-top: 1.5rem;
+    & p {
+      align-items: center;
+    }
+
+    & p input {
+      background-color: $btnPrimary;
+      color: $white;
+      border: none;
+      padding: 1.2rem 3.5rem;
+      border-radius: 4px;
+      font-size: 20px;
+      margin-left: 7rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.gform_footer .gform_button:hover {
+  color: $tertiary;
+}

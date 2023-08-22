@@ -1,0 +1,267 @@
+.footer {
+  background-image: linear-gradient(to right, #5bafba, #3d4f9e);
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+
+  &_grid {
+    color: $white;
+    text-align: center;
+
+    @include atMedium {
+      text-align: left;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    & a:hover {
+      color: $primary;
+    }
+
+    &_column-1 {
+      @include atMedium {
+        grid-column: 1 / 5;
+        padding-top: 1.5rem;
+      }
+
+      &_footer-logo {
+        width: 200px;
+        cursor: pointer;
+        @include atSmaller {
+          width: 265px;
+        }
+
+        @include atMedium {
+          max-width: 300px;
+        }
+
+        @include atLarge {
+          width: 300px;
+        }
+      }
+
+      &_p {
+        color: $white;
+        font-size: 16px;
+        line-height: 1.7em;
+
+        width: 200px;
+        margin: 0 auto;
+
+        @include atSmaller {
+          width: 290px;
+        }
+
+        @include atMedium {
+          text-align: left;
+
+          margin: 0;
+        }
+      }
+
+      &_social-icons {
+        display: flex;
+        justify-content: center;
+        padding: 6rem 0 3rem 0;
+
+        @include atMedium {
+          justify-content: left;
+          padding-top: 8rem;
+        }
+
+        & a {
+          margin-right: 1rem;
+
+          @include atSmaller {
+            margin-right: 2rem;
+          }
+
+          @include atMedium {
+            margin-right: 2rem;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &_column-2 {
+      @include atMedium {
+        grid-column: 5 / 9;
+        padding-left: 5rem;
+      }
+
+      @include atLarge {
+        grid-column: 6 / 9;
+        padding-left: 0;
+      }
+
+      &_about {
+        padding-bottom: 3rem;
+      }
+
+      & p {
+        line-height: 1.5em;
+        margin: 0;
+      }
+
+      &_evidence {
+        margin-bottom: 2rem;
+
+        padding-top: 2rem;
+
+        @include atMedium {
+          padding-top: 3rem;
+        }
+      }
+    }
+
+    &_column-3 {
+      @include atMedium {
+        grid-column: 9 / 13;
+
+        padding-left: 2rem;
+      }
+      @include atLarge {
+        padding-left: 0;
+        grid-column: 9 / 12;
+      }
+
+      &_demo {
+        padding-top: 3rem;
+        // padding-bottom: 3rem;
+
+        @include atMedium {
+          padding-top: 0;
+          padding-bottom: 3rem;
+        }
+      }
+
+      &_contact {
+        line-height: 2em;
+
+        @include atMedium {
+          margin-bottom: 5rem;
+        }
+
+        & p {
+          width: 225px;
+          margin: 0 auto;
+
+          @include atMedium {
+            margin: 0;
+          }
+        }
+      }
+
+      &_career {
+        // padding
+      }
+
+      & p {
+        line-height: 1.5em;
+
+        margin: 0;
+      }
+
+      &_newsletter {
+        & h2 {
+          padding-top: 3rem;
+          padding-bottom: 1rem;
+
+          @include atMedium {
+            padding-top: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &_icon {
+    padding-right: 5px;
+  }
+
+  &_bottom {
+    background-color: $footerGray;
+    color: $white;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 14px;
+
+    &_grid {
+      @include atSmall {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    }
+
+    &_copy {
+      grid-column: 1 / 8;
+
+      &_symbol {
+        & a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+
+    &_tm {
+      text-decoration: none;
+      color: white;
+    }
+
+    &_privacy {
+      @include atSmall {
+        grid-column: 8 / 10;
+        text-align: center;
+      }
+
+      @include atMedium {
+        grid-column: 9 / 11;
+        text-align: right;
+      }
+
+      & a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    &_tos {
+      @include atSmall {
+        grid-column: 11 / 13;
+      }
+
+      @include atMedium {
+        grid-column: 11 / 13;
+      }
+
+      & a {
+        color: $white;
+        text-decoration: none;
+      }
+
+      @include atMedium {
+        text-align: right;
+      }
+    }
+  }
+}
+
+#menu-footer-menu {
+  line-height: 1.7em;
+  font-size: 17px;
+  list-style: none;
+
+  & li a {
+    color: $white;
+  }
+}
+
+.sub-menu {
+  list-style: none;
+}

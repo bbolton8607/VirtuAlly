@@ -1,0 +1,100 @@
+.about {
+  // background-image: url("../img/MaskforAboutSection.png");
+  // background-image: url("../img/MaskforAboutSection.png"),
+  //   linear-gradient(253deg, #3d4f9e, #77ccd6);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // padding: 2rem 5rem;
+
+  @include atMedium {
+    padding: 2rem 0rem;
+  }
+
+  & h2 {
+    // font-size: 3.1rem;
+    padding-bottom: 1rem;
+
+    @include atSmaller {
+      font-size: 4rem;
+    }
+
+    @include atSmall {
+      font-size: 5rem;
+      line-height: 1.2em;
+    }
+  }
+
+  & p {
+    line-height: 1.4em;
+    padding-bottom: 2rem;
+    font-size: 13px;
+    color: #474751;
+    // padding-top: 11rem;
+
+    @include atSmaller {
+      font-size: 16px;
+      // padding-top: 20rem;
+    }
+
+    @media (min-width: 450px) {
+      // padding-top: 11rem;
+    }
+
+    @include atSmall {
+      font-size: 25px;
+      padding: 12rem 5rem 4rem 5rem;
+    }
+
+    @include atMedium {
+      padding: 6rem 1rem 4rem;
+    }
+
+    @include atLarge {
+      padding: 10rem 1rem 0rem;
+    }
+  }
+
+  & button:hover {
+    color: $black;
+  }
+
+  &_icons {
+    padding: 4rem 0;
+    text-align: center;
+
+    &_grid {
+      & div img {
+        height: 150px;
+        width: 150px;
+      }
+
+      & p {
+        color: $boxGray;
+      }
+
+      @include atMedium {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
+
+        & div {
+          text-align: center;
+
+          & h2 {
+            font-size: 28px;
+          }
+
+          & p {
+            color: $boxGray;
+            line-height: 1.5em;
+            padding: 0 3rem;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

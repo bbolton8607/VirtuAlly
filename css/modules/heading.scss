@@ -1,0 +1,338 @@
+/************************************* NORMAL HEADINGS *******************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 !important;
+  font-family: "europa";
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+/************************************* THIN LINE HEADINGS *******************************************/
+
+/************************************* FRONT PAGE HEADINGS *******************************************/
+
+.heading {
+  text-align: center;
+  font-size: 3.9rem;
+  color: $primary;
+  line-height: 1.3em;
+  padding-top: 3rem;
+
+  @include atSmall {
+    font-size: 4rem;
+    padding-bottom: 6rem;
+    line-height: inherit;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 25px 0;
+    grid-gap: 20px;
+    font-size: 3.9rem;
+    padding: 4rem 0 2rem 0;
+    color: $primary;
+    line-height: 1.3em;
+  }
+
+  @include atMedium {
+    font-size: 4.5rem;
+  }
+
+  &:after,
+  &:before {
+    @include atSmall {
+      padding-top: 25px;
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $primary;
+    }
+
+    @include atMedium {
+      padding-top: 32px;
+    }
+  }
+
+  /************************************* SEARCH PAGE HEADINGS *******************************************/
+
+  &_search {
+    & span {
+      margin: 0 auto;
+    }
+  }
+  /************************************* THIN LINE HEADINGS *******************************************/
+
+  &_light_blue {
+    color: $secondary;
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $secondary;
+      padding-top: 30px;
+
+      @include atSmaller {
+        padding-top: 40px;
+      }
+
+      @include atSmall {
+        padding-top: 45px;
+      }
+    }
+  }
+  /************************************* FIRST HEADING ON FRONT PAGE (BLUE TEXT WHITE BACKGROUND) & DEMO *******************************************/
+
+  &_blue {
+    color: $tertiary;
+    text-align: center;
+
+    @include atSmaller {
+    }
+    &:after,
+    &:before {
+      @include atSmall {
+        padding-top: 26px;
+        content: " ";
+        display: block;
+        border-bottom: 1px solid $tertiary;
+      }
+
+      @include atMedium {
+        padding-top: 30px;
+      }
+    }
+  }
+  /************************************* SINGLE PAGE HEADINGS *******************************************/
+
+  &_white {
+    color: $white;
+
+    @include atSmaller {
+      padding-top: 6rem;
+    }
+
+    @include atSmall {
+      padding-top: 5rem;
+    }
+
+    @include atMedium {
+      padding-top: 4.5rem;
+    }
+
+    &:after,
+    &:before {
+      @include atSmaller {
+        padding-top: 28px;
+        content: " ";
+        display: block;
+        border-bottom: 1px solid $white;
+        padding-top: 25px;
+      }
+
+      @include atSmall {
+        padding-top: 40px;
+      }
+
+      @include atMedium {
+        padding-top: 32px;
+      }
+    }
+  }
+  /************************************* HEADING THIN LINE HEADINGS (ABOUT SECTION FRONT PAGE)*******************************************/
+
+  &_thin {
+    color: $white;
+    font-size: 8rem;
+    line-height: 1.1em;
+  }
+  /*************************************  HEADINGS *******************************************/
+
+  &_page {
+    color: $white;
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $white;
+      padding-top: 30px;
+
+      @include atSmaller {
+        padding-top: 40px;
+      }
+
+      @include atSmall {
+        padding-top: 45px;
+      }
+    }
+  }
+  /************************************* EVIDENCE PAGE HEADINGS *******************************************/
+
+  &_evidence {
+    color: $tertiary;
+    font-family: "Europa", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1.5rem 0;
+    padding-bottom: 5rem;
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 2px solid $boxGray;
+      padding-top: 30px;
+
+      @include atSmaller {
+        padding-top: 40px;
+      }
+
+      @include atSmall {
+        padding-top: 45px;
+      }
+    }
+  }
+}
+
+/************************************* CASE STUDIES PAGE HEADINGS *******************************************/
+
+.case {
+  &-page-header {
+    background: linear-gradient(to right, $newsletterBtn, $tertiary);
+    margin-top: 11rem;
+    padding-top: 1rem;
+    height: 14rem;
+
+    @media only screen and (min-width: 307px) {
+      height: 11rem;
+      padding-top: 2.5rem;
+    }
+  }
+
+  &-heading {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 25px 0;
+    grid-gap: 20px;
+    font-size: 3.9rem;
+    color: $primary;
+    line-height: 1.3em;
+    color: $white;
+
+    @include atMedium {
+      font-size: 4.5rem;
+    }
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $white;
+      padding-top: 25px;
+
+      @include atSmaller {
+        padding-top: 25px;
+      }
+
+      @include atMedium {
+        padding-top: 31px;
+      }
+    }
+  }
+}
+
+/************************************* THOUGHT LEADERSHIP PAGE HEADINGS *******************************************/
+
+.thought {
+  &-page-header {
+    background: linear-gradient(to right, $newsletterBtn, $tertiary);
+    margin-top: 11rem;
+    padding-top: 1rem;
+    height: 14rem;
+
+    @media only screen and (min-width: 444.5px) {
+      height: 11rem;
+      padding-top: 2.5rem;
+    }
+  }
+
+  &-heading {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 25px 0;
+    grid-gap: 20px;
+    font-size: 3.9rem;
+    color: $primary;
+    line-height: 1.3em;
+    color: $white;
+
+    @include atMedium {
+      font-size: 4.5rem;
+    }
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $white;
+      padding-top: 25px;
+
+      @include atSmaller {
+        padding-top: 25px;
+      }
+
+      @include atMedium {
+        padding-top: 31px;
+      }
+    }
+  }
+}
+
+/************************************* EVIDENCE PAGE HEADINGS *******************************************/
+
+.evidence {
+  &-page-header {
+    background: linear-gradient(to right, $newsletterBtn, $tertiary);
+    margin-top: 11rem;
+    padding-top: 2rem;
+    height: 10rem;
+  }
+
+  &-heading {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 25px 0;
+    grid-gap: 20px;
+    font-size: 3.9rem;
+    color: $primary;
+    line-height: 1.3em;
+    color: $white;
+
+    @include atMedium {
+      font-size: 4.5rem;
+    }
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid $white;
+      padding-top: 25px;
+
+      @include atSmaller {
+        padding-top: 25px;
+      }
+
+      @include atMedium {
+        padding-top: 29px;
+      }
+    }
+  }
+}

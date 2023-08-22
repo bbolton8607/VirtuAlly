@@ -1,0 +1,192 @@
+//************************************* EVIDENCE HOME PAGE SECTION *******************************************
+
+.evidence {
+  padding-bottom: 3rem;
+
+  &_grid {
+    padding-top: 7rem;
+
+    @include atSmaller {
+      padding-top: 2rem;
+    }
+
+    @include atMedium {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 5rem;
+      padding-top: 1rem;
+      grid-column-gap: 1rem;
+    }
+
+    &_content {
+      text-align: center;
+      line-height: 1em;
+      padding-bottom: 4rem;
+
+      &_title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 25px;
+      }
+
+      &_desc {
+        font-family: "Europa", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      & p {
+        line-height: 1.2em;
+        max-width: 350px;
+        color: $paraGray;
+        margin: 2rem auto;
+      }
+
+      & button:hover {
+        color: $black;
+      }
+    }
+  }
+}
+
+//************************************* EVIDENCE PAGE *******************************************
+
+.evidence-page {
+  padding-bottom: 5rem;
+
+  &_recent-blog {
+    padding: 5rem 0;
+
+    &_content {
+      padding-bottom: 3rem;
+      text-align: center;
+
+      &_header {
+        font-size: 28px;
+        font-family: "Europa", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      &_date {
+        color: $secondary !important;
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      &_para {
+        color: $darkGray;
+        font-size: 18px;
+      }
+
+      & p {
+        line-height: 1.4em;
+        font-weight: normal;
+      }
+
+      &_img {
+        text-align: center;
+
+        @include atMedium {
+          text-align: right;
+        }
+      }
+
+      &_btn {
+        font-size: 18px;
+        font-family: "Europa", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    @include atMedium {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+
+      &_content {
+        grid-column: 1 / 2;
+        text-align: left;
+
+        &_date {
+          color: $secondary;
+        }
+
+        &_para {
+          color: $darkGray;
+        }
+      }
+
+      & img {
+        grid-column: 2 / 3;
+      }
+    }
+  }
+
+  &_case-studies {
+    text-align: center;
+
+    & div {
+      border: 2px solid $boxGray;
+      padding-bottom: 3rem;
+      margin-bottom: 2rem;
+
+      & p {
+        color: gray;
+        padding: 1rem 3rem;
+        padding-bottom: 3rem;
+        font-size: 18px;
+        line-height: 1.3em;
+        font-family: "Europa", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-top: 1rem;
+        max-width: 475px;
+        margin: 0 auto;
+      }
+    }
+
+    &-date {
+      color: $secondary !important;
+      margin: 0;
+      font-family: "Europa", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 0.5em;
+      padding-bottom: 2rem;
+    }
+
+    @include atMedium {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+
+      & div {
+        border: 2px solid $boxGray;
+        padding-bottom: 3.25rem;
+      }
+
+      &-title {
+        font-size: 24px;
+      }
+
+      &-date {
+        text-transform: uppercase;
+        color: $secondary;
+        margin: 0;
+      }
+
+      &-excerpt {
+        font-size: 18px;
+      }
+    }
+  }
+}

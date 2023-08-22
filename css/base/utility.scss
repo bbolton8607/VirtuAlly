@@ -1,0 +1,72 @@
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-tertiary {
+  color: $tertiary;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-gray {
+  color: $lightGray;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+  border: white;
+  background: none;
+  border-color: none;
+  border-style: none;
+}
+
+.padding-top-0 {
+  padding-top: 0 !important;
+}
+
+.europa-bold {
+  font-family: "europa", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.europa-regular {
+  font-family: "europa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.europa-thin {
+  font-family: "europa", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.europa-regular-italic {
+  font-family: "europa", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.span-margin {
+  margin: 0 auto;
+  padding: 0 auto;
+}

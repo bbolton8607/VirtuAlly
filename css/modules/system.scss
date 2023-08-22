@@ -1,0 +1,73 @@
+.system {
+  // padding-bottom: 5rem;
+  text-align: center;
+  // background-color: rgba(232, 232, 237, 0.4);
+
+  @include atMedium {
+    text-align: left;
+  }
+
+  & h1 {
+    padding-bottom: 15rem;
+
+    @include atSmaller {
+      padding-bottom: 13rem;
+    }
+  }
+
+  &_content {
+    padding: 2rem 0;
+
+    @include atSmaller {
+      // padding-top: 15rem;
+    }
+
+    @include atSmall {
+      padding-top: 2rem;
+    }
+  }
+
+  &_grid {
+    padding-bottom: 1rem;
+    vertical-align: top;
+
+    @include atSmaller {
+    }
+    @include atMedium {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      grid-column-gap: 2rem;
+
+      max-width: 83%;
+      margin: 0 auto;
+    }
+
+    @include atLarge {
+    }
+
+    & div {
+      color: $black;
+      font-size: 24px;
+      line-height: 1.5em;
+
+      & h3 {
+        // padding: 0 5rem;
+      }
+    }
+
+    &_card-1 {
+    }
+
+    &_card-2 {
+      margin: 2rem 0;
+
+      @include atMedium {
+        margin: 0;
+      }
+    }
+
+    &_card-3 {
+    }
+  }
+}

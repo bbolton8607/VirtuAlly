@@ -1,0 +1,95 @@
+.testimonials {
+  background-color: rgba(232, 232, 237, 0.4);
+  padding-bottom: 3rem;
+
+  &_grid {
+    @include atMedium {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      padding-top: 4rem;
+    }
+
+    &_testimonials {
+      padding-top: 6rem;
+
+      @include atSmaller {
+        padding-top: 4rem;
+      }
+
+      @include atSmall {
+        padding-top: 0;
+      }
+
+      @include atMedium {
+        grid-column: 1 / 7;
+        text-align: center;
+        padding: 2rem 5rem;
+      }
+
+      @include atLarge {
+        padding: 2rem 7rem;
+      }
+
+      &-header {
+        text-align: center;
+        color: $mediumGray;
+        padding-bottom: 1rem;
+      }
+
+      &-comment {
+        font-size: 16px;
+        @include atSmaller {
+          font-size: 18px;
+          padding: 0 6rem;
+        }
+
+        @include atSmall {
+          padding: 0 8rem;
+          font-size: 20px;
+        }
+
+        @include atMedium {
+          font-size: 20px;
+
+          padding: 0 1rem;
+        }
+      }
+
+      &-author {
+        font-size: 18px;
+      }
+    }
+
+    &_content {
+      grid-column: 7 / 11;
+      padding-top: 2rem;
+      border-top: 1px solid $tertiary;
+      text-align: center;
+
+      @include atMedium {
+        border-left: 1px solid $tertiary;
+        border-top: none;
+        text-align: left;
+        padding-left: 3rem;
+      }
+
+      & button {
+        margin-top: 5rem;
+      }
+    }
+
+    &_clients {
+      color: $secondary;
+      font-size: 18px;
+
+      & h3 {
+        line-height: 1.75em;
+        transition: ease-in-out 0.2s;
+
+        &:hover {
+          color: $tertiary;
+        }
+      }
+    }
+  }
+}

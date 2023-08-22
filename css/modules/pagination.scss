@@ -1,0 +1,40 @@
+.page-navigation {
+  & ul {
+    list-style: none;
+
+    & li {
+      display: inline-block;
+      padding: 0 1rem;
+      text-decoration: none;
+      color: gray;
+
+      & a {
+        text-decoration: none;
+        color: $lightGray;
+      }
+
+      & .current {
+        color: $navGray;
+      }
+
+      & :last-child a {
+        color: $navGray;
+      }
+    }
+  }
+}
+
+.post-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-family: "Europa", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.pagination a {
+  list-style: none;
+}

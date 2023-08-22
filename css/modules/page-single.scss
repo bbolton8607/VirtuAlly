@@ -1,0 +1,140 @@
+.page {
+  &_header {
+    display: flex;
+    background-image: linear-gradient(to right, $newsletterBtn, $tertiary);
+    margin-top: 9rem;
+    height: 10rem;
+
+    @include atSmaller {
+      height: 18rem;
+    }
+
+    @media only screen and (min-width: 500px) {
+      height: 15rem;
+    }
+  }
+
+  &_content {
+    margin: auto;
+    text-align: center;
+
+    @include atSmall {
+      text-align: left;
+    }
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Europa", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      padding: 4rem 0 1.5rem;
+      line-height: 1.3em;
+    }
+
+    & h2 {
+      font-size: 28px;
+      color: $tertiary;
+    }
+
+    & h3 {
+      font-size: 24px;
+    }
+
+    & h4 {
+      font-size: 20px;
+    }
+
+    & p {
+      line-height: 1.5em;
+      font-family: "Europa", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: $paraGray;
+      padding-bottom: 2rem;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    & ul {
+      margin: -1rem 0 0 0;
+      color: $paraGray;
+      padding-inline-start: 0 !important;
+
+      @include atMedium {
+        padding-inline-start: 40px !important;
+      }
+
+      & ul {
+        margin: 0;
+
+        & ul {
+          margin: 0;
+        }
+      }
+    }
+
+    & ul li {
+      text-align: center;
+      list-style-position: inside;
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+
+      @include atMedium {
+        text-align: left;
+      }
+    }
+
+    &_btn {
+      padding: 2rem 0;
+    }
+
+    &_404 {
+      text-align: center;
+
+      & p {
+        padding: 1rem 0 3rem 0;
+      }
+    }
+  }
+
+  &_grid {
+    padding: 4rem 0;
+  }
+
+  &_contact {
+    &_grid {
+      @include atMedium {
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5rem;
+      }
+    }
+
+    &_content {
+      text-align: center;
+      @include atMedium {
+        grid-column: 1 / 2;
+      }
+
+      & p {
+        line-height: 1.5em;
+      }
+    }
+
+    &_form {
+      padding: 2rem 0;
+
+      @include atMedium {
+        grid-column: 2 / 3;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding-top: 3.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+//********************************************************* GRAVITY FORMS ******************************************
+
+//******************************************************** CONTACT PAGE FORM ***************************************
+.gform_title {
+  display: none;
+}
+
+.page_contact_form .gform_footer .gform_button {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  background: #fb5e0f !important;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page_contact_form .ginput_complex #input_1_1_3_container {
+  padding-right: 0;
+}
+
+.page_contact_form #gform_fields_1 {
+  grid-row-gap: 3rem;
+}
+
+.page_contact_form span input {
+  height: 45px;
+}
+
+.gform_fields input {
+  height: 45px;
+}
+
+.page_contact_form .gform_body .gfield input {
+  border-radius: 4px;
+  border: 1px solid gray !important;
+}
+
+.ginput_container_textarea textarea {
+  border-radius: 4px;
+  resize: none;
+}
+
+//******************************************************** NEWSLETTER FOOTER EMAIL FORM ***************************************
+.newsletter-input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  @include atMedium {
+    text-align: left;
+    justify-content: left;
+  }
+
+  & .gform-body {
+    width: 250px;
+  }
+
+  &-email {
+    & .ginput_container_email {
+      border: none;
+    }
+  }
+
+  & .gform_body .gfield input {
+    border: none;
+    height: 40px;
+  }
+
+  & .gform_footer .gform_button {
+    background: url("https://virtu-ally.flywheelsites.com/wp-content/uploads/2022/01/iconarrowrightwhite.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #77ccd6;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: transparent;
+    }
+  }
+}
+
+#input_2_1 {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.gform_wrapper.gravity-theme .gform_footer,
+.gform_wrapper.gravity-theme .gform_page_footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+//******************************************************** STAY INFORMED SECTION ***************************************
+
+.stay-informed-input {
+  @include atSmall {
+    & #gform_fields_3 {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2.5rem;
+
+      & .gfield {
+        width: 300px;
+      }
+    }
+  }
+
+  & .gform_body {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+  }
+
+  & .gform_footer .gform_button {
+    border: none;
+    background-color: #fb5e0f;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem 4rem;
+    font-size: 20px;
+  }
+}
+
+#input_3_1_3,
+#input_3_2 {
+  border: none;
+  border-radius: 4px;
+}
+
+.gform_wrapper.gravity-theme
+  .ginput_complex:not(.ginput_container_address)
+  fieldset:not([style*="display:none"]):not(.ginput_full),
+.gform_wrapper.gravity-theme
+  .ginput_complex:not(.ginput_container_address)
+  span:not([style*="display:none"]):not(.ginput_full) {
+  padding-right: 0 !important;
+}

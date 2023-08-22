@@ -1,0 +1,26 @@
+.know {
+  background-image: url("../img/MaskforAboutSection.png");
+  background-image: url("../img/MaskforAboutSection.png"),
+    linear-gradient(253deg, #3d4f9e, #77ccd6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+  text-align: center;
+
+  & h2 {
+    font-size: 4.5rem;
+    color: $white;
+    line-height: 1.3em;
+  }
+
+  & p {
+    color: $white;
+    padding: 1rem 0;
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.5em;
+    font-weight: 300;
+  }
+}

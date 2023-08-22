@@ -1,0 +1,26 @@
+.wrapper-splide {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.splide__slide {
+  padding: 1rem 0;
+  text-align: center;
+
+  @include atMedium {
+    padding: 0 5rem;
+  }
+}
+
+.splide__arrow {
+  background: transparent !important;
+  margin-top: 8rem;
+
+  @include atSmaller {
+    margin-top: 6rem;
+  }
+
+  @include atSmall {
+    margin-top: 0;
+  }
+}
